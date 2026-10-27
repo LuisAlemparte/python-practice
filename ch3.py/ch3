@@ -1,0 +1,11 @@
+bicycles = ['trek', 'cannondale', 'redline', 'special']
+names = ['Luis', 'Ron', 'Antonio']
+names.append('Pedro')
+names.append('Luis')
+too_cool = 'Luis'
+cars = ['BMW', 'Audi', 'McLaren', 'Mercedes' ]
+cars.sort(reverse=True)
+print(cars) 
+
+
+
