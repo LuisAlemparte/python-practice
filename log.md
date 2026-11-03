@@ -6,4 +6,6 @@
     insane how much easier python is so much more confortable than CS50... very easy and relaxed day with lists and etc pretty intiative.
    ## 2026-10-28 
    Creating lops and making list and (title.) makes everything still pretty resanpbel to understnd
+   ## 3 Nov 26
+   Created first code for the automatition of 2 buildings! Working good for now waited on the actual tenant informations.
    

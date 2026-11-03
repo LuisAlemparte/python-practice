@@ -65,9 +65,9 @@ if 'extra cheese' in requested_topings:
 
     print("n\nFisnished making your pizza!")
 
-    for requested_topping in requested_toping
+    for requested_topping in requested_topings:
     
-    if requested_toping == 'extra cheese':
+        if requested_topping == 'extra cheese':
         print("Sorry out of cheese")
         
 
