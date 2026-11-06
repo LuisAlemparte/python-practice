@@ -8,4 +8,10 @@
    Creating lops and making list and (title.) makes everything still pretty resanpbel to understnd
    ## 3 Nov 26
    Created first code for the automatition of 2 buildings! Working good for now waited on the actual tenant informations.
-   
+   ## 2026-11-05/06
+- Real data in: 15 tenants, MT940 bank export, matched by IBAN not name
+- Paper had 2 wrong rents + 1 wrong name; the bank data corrected it
+- Fixed 3 rules from the output: valid_from per tenant, late-month payments, rent vs other transfers
+- 9 anomalies → 1 (known credit). 3 minutes instead of 2 afternoons
+- recover 7/7, pset 4 complete
+- Lessons: replace the whole block when indentation drifts; print must sit after the whole if/elif/else; i = di vs i + di
