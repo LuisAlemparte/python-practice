@@ -26,3 +26,8 @@ response.content[0].text — the reply text. .strip().lower() cleans spaces and 
 return answer if answer in CATEGORIES else "other" — if Claude says something unexpected, fall back to “other” instead of crashing.
 Loop: predicted vs row["category"]; hit is True/False, and correct += hit works because True counts as 1.
 {correct / len(rows):.0%} — format as a percentage with 0 decimals.
+## Mon 9 Nov Part 2
+- CS50 pset 5: inheritance 9/9, speller (hash table, linked lists, valgrind clean, 0.06s)
+- rent_check v3: per-tenant due_day + BUFFER, days_late, LATE status. Oct: all on time except Azal (2d) and Oezkaya LKW (16d)
+- First Claude API call: classify_emails.py, Haiku, 19/20 on labelled set. Inbox mode → tickets.csv, ticket #1 Braun balcony
+- Claude desktop linked to repos; .env for API key
