@@ -18,3 +18,11 @@
 ## Mon 9 Nov — Week 5 (Data Structures)
 - inheritance: recursion, malloc for each person, random alleles from parents, free bottom-up
 - speller: hash table (65536 buckets) of linked lists, hash = sum*31 of lowercase letters, fscanf, strcasecmp, free with tmp pointer, valgrind 0 leaks, 0.06s total
+load_dotenv() reads .env and puts ANTHROPIC_API_KEY into the environment. anthropic.Anthropic() finds it there automatically. The key never appears in code.
+CATEGORIES — the only four answers we accept.
+PROMPT — triple quotes = multi-line string. {text} is a hole that .format(text=...) fills later. “Antworte nur mit dem einen Wort” forces a one-word answer so we can compare it.
+client.messages.create(...) — the actual API call. model which Claude (Haiku = cheapest, fastest, enough for this). max_tokens=5 cap on answer length. messages is a list of turns; we send one user turn.
+response.content[0].text — the reply text. .strip().lower() cleans spaces and case.
+return answer if answer in CATEGORIES else "other" — if Claude says something unexpected, fall back to “other” instead of crashing.
+Loop: predicted vs row["category"]; hit is True/False, and correct += hit works because True counts as 1.
+{correct / len(rows):.0%} — format as a percentage with 0 decimals.
