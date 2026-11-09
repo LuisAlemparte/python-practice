@@ -15,3 +15,6 @@
 - 9 anomalies → 1 (known credit). 3 minutes instead of 2 afternoons
 - recover 7/7, pset 4 complete
 - Lessons: replace the whole block when indentation drifts; print must sit after the whole if/elif/else; i = di vs i + di
+## Mon 9 Nov — Week 5 (Data Structures)
+- inheritance: recursion, malloc for each person, random alleles from parents, free bottom-up
+- speller: hash table (65536 buckets) of linked lists, hash = sum*31 of lowercase letters, fscanf, strcasecmp, free with tmp pointer, valgrind 0 leaks, 0.06s total
