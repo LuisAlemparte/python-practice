@@ -30,4 +30,10 @@ Loop: predicted vs row["category"]; hit is True/False, and correct += hit works 
 - CS50 pset 5: inheritance 9/9, speller (hash table, linked lists, valgrind clean, 0.06s)
 - rent_check v3: per-tenant due_day + BUFFER, days_late, LATE status. Oct: all on time except Azal (2d) and Oezkaya LKW (16d)
 - First Claude API call: classify_emails.py, Haiku, 19/20 on labelled set. Inbox mode → tickets.csv, ticket #1 Braun balcony
-- Claude desktop linked to repos; .env for API key
+- Claude desktop linked to repos; .env for API key## Tue 10 Nov
+- classify_emails: inbox dedupe (set), close command (read-modify-rewrite CSV), reply drafter (Sonnet 5.5, system prompt persona, placeholders [Anrede]/[Firma]/[Datum]), drafts saved to output/antworten, eval2 double run
+- rent_check: monthly German report Bericht-YYYY-MM.md (Soll/Ist, Auffälligkeiten, offene Anliegen)
+- Eval: 20→30 emails. Prompt v2 fixed 2, broke 2 (same 90%) → only the full set shows it. 2 label errors, fixed. 30/30
+- Model switch Haiku 4.5→5.5 dropped to 73%: empty answers, thinking ate max_tokens. Silent fallback hid it → always log unexpected output
+- Evals are snapshots: same input, different run, different misses. Functions must be defined above where they're called
+- git: commit message = what changed, not the commands; filter-branch to rewrite history
