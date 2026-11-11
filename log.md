@@ -44,4 +44,5 @@ Loop: predicted vs row["category"]; hit is True/False, and correct += hit works 
 - sum(bool for ...) counts Trues; all(...) true only if every item is; list/dict comprehensions
 - dna: csv.DictReader → list of dicts, keys()[1:] for the STR names, int() before comparing CSV strings to ints, return inside loop = found
 - Recurring bug: code indented inside a loop that should run after it. Recurring terminal bug: wrong folder, read the prompt
-
+- PCC ch6 6-7..6-9: list of dicts, dict.items() unpacking, nested loop; repo tidied into pcc/
+- Contracts: both templates list Hausreinigung as umlagefähige Betriebskosten → cleaner from Jan, cost via Nebenkostenabrechnung. Letter drafted.
