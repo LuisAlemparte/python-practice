@@ -37,3 +37,11 @@ Loop: predicted vs row["category"]; hit is True/False, and correct += hit works 
 - Model switch Haiku 4.5→5.5 dropped to 73%: empty answers, thinking ate max_tokens. Silent fallback hid it → always log unexpected output
 - Evals are snapshots: same input, different run, different misses. Functions must be defined above where they're called
 - git: commit message = what changed, not the commands; filter-branch to rewrite history
+## Wed 11 Nov — Week 6 (Python)
+- Pset 6 all five submitted before lunch: hello, mario, credit, readability, dna
+- Python vs C: no types, no malloc, no \0; input() + int(); try/except ValueError instead of do-while; chained comparisons 1 <= x <= 8
+- Strings: " " * n, slicing number[:2], text.split(), c.isalpha(), c in ".!?"
+- sum(bool for ...) counts Trues; all(...) true only if every item is; list/dict comprehensions
+- dna: csv.DictReader → list of dicts, keys()[1:] for the STR names, int() before comparing CSV strings to ints, return inside loop = found
+- Recurring bug: code indented inside a loop that should run after it. Recurring terminal bug: wrong folder, read the prompt
+
