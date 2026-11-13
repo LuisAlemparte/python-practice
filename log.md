@@ -46,3 +46,15 @@ Loop: predicted vs row["category"]; hit is True/False, and correct += hit works 
 - Recurring bug: code indented inside a loop that should run after it. Recurring terminal bug: wrong folder, read the prompt
 - PCC ch6 6-7..6-9: list of dicts, dict.items() unpacking, nested loop; repo tidied into pcc/
 - Contracts: both templates list Hausreinigung as umlagefähige Betriebskosten → cleaner from Jan, cost via Nebenkostenabrechnung. Letter drafted.
+## Thu 12 Nov — Week 7 (SQL)
+- Psets: songs 8/8, movies 14/14, fiftyville 3/3 (Bruce, New York City, Robin), all before 13:30
+- SELECT/WHERE/ORDER BY/LIMIT, COUNT/AVG/SUM, LIKE '%x%', nested SELECT ... IN (...), JOIN ... ON, DISTINCT
+- Two prompts: $ = shell, sqlite> = database. .schema/.tables/.quit only inside; cat file | sqlite3 db from outside
+- Flats: build_db.py → flats.db (tenants, transactions, tickets). Rent check as one query with WITH (CTE), LEFT JOIN, COALESCE, CASE WHEN; matches rent_check.py row for row
+- Lateness query: SUBSTR to cut the day out of a date, HAVING for grouped rows. Found Kaya S.O. pays for garage 5, sheet said garage 3
+- Owner review with Dad: three drafts → concrete persona rules; two more sheet corrections (the two Kayas)
+## Fri 13 Nov
+- rent_check: tenants keyed by (house, flat, tenant) so a payer-account switch (Fornasier → Daniele Spagnuolo) is one row per period; dict.fromkeys to dedupe names; credit carried forward per IBAN (Hirmer 47/month, Kaya S.O. 100)
+- Bank data corrected the sheet again: garages 7/10 swapped, 50 vs 55
+- Bericht v2: 4 Auffälligkeiten, all real; Guthaben section
+- Lesson: a paste that lands one indent too deep runs without error and silently prints only in one branch
