@@ -58,3 +58,8 @@ Loop: predicted vs row["category"]; hit is True/False, and correct += hit works 
 - Bank data corrected the sheet again: garages 7/10 swapped, 50 vs 55
 - Bericht v2: 4 Auffälligkeiten, all real; Guthaben section
 - Lesson: a paste that lands one indent too deep runs without error and silently prints only in one branch
+## Thu 19 Nov
+- rent_check.py split into load_tenants / parse_mt940 / classify_transfers / check_months + main; diff against the old output identical
+- `if __name__ == "__main__":` so the functions can be imported; first test file: 8 asserts on classify_transfers with invented tenants
+- Certificate path: weeks 8–9 psets still required (trivia, homepage, birthdays), final project = flats-automation + 3-min video, target 4 Dec
+- Questions 3/9/10/17/23: 4 of 5; 9 to repeat
