@@ -63,3 +63,8 @@ Loop: predicted vs row["category"]; hit is True/False, and correct += hit works 
 - `if __name__ == "__main__":` so the functions can be imported; first test file: 8 asserts on classify_transfers with invented tenants
 - Certificate path: weeks 8–9 psets still required (trivia, homepage, birthdays), final project = flats-automation + 3-min video, target 4 Dec
 - Questions 3/9/10/17/23: 4 of 5; 9 to repeat
+## Mon 23 Nov — Weeks 8–9
+- Week 8: trivia (onclick → function, event.target, innerHTML, querySelector('.class')), homepage (4 pages, Bootstrap navbar/card/table/form, styles.css, specification.txt)
+- Week 9: birthdays — Flask route with GET/POST, request.form.get, db.execute with ? placeholders, Jinja {% for %} in a template
+- Finance is required too (I was wrong); plan: Tue–Wed
+- Lesson: server running = terminal busy; Ctrl+C first. Codespace for CS50, Mac for everything else
