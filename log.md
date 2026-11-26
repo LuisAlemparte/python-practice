@@ -68,3 +68,21 @@ Loop: predicted vs row["category"]; hit is True/False, and correct += hit works 
 - Week 9: birthdays — Flask route with GET/POST, request.form.get, db.execute with ? placeholders, Jinja {% for %} in a template
 - Finance is required too (I was wrong); plan: Tue–Wed
 - Lesson: server running = terminal busy; Ctrl+C first. Codespace for CS50, Mac for everything else
+## Thu 26 Nov
+
+**CS50 — Finance (pset 9) submitted, check50 21/21 first run.**
+- register: validation, generate_password_hash, UNIQUE via try/except ValueError
+- quote: lookup(), apology on None, usd filter in quoted.html
+- transactions table (CREATE TABLE in sqlite3, FOREIGN KEY to users)
+- buy: isdigit() share check, cash check, INSERT + UPDATE cash, redirect
+- index: GROUP BY symbol HAVING SUM(shares) > 0, lookup for live price, Jinja table with tfoot for cash/total
+- sell: negative shares in same table, <select> of owned symbols, "too many shares"
+- history: ORDER BY timestamp DESC, Jinja inline if for Buy/Sell
+- personal touch: /addcash route + nav link
+- style50: two comment spacing fixes
+
+**Mistakes:** sqlite3 run from wrong folder (read the prompt); three templates created in templates/templates (VS Code New File uses the selected folder → use `touch templates/x.html` instead); history.hmtl typo.
+
+**Learned:** db.execute always returns a list → rows[0]["cash"]; SUM of nothing is None → `or 0`; one transactions table with signed shares covers buy, sell, portfolio and history.
+
+**Left:** final project README check, video script, record 3-min video, submit form. Five questions not done today.
