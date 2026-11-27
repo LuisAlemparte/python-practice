@@ -86,3 +86,13 @@ Loop: predicted vs row["category"]; hit is True/False, and correct += hit works 
 **Learned:** db.execute always returns a list → rows[0]["cash"]; SUM of nothing is None → `or 0`; one transactions table with signed shares covers buy, sell, portfolio and history.
 
 **Left:** final project README check, video script, record 3-min video, submit form. Five questions not done today.
+## Fri 27 Nov — CS50x complete
+
+- Five questions cold: 1.5/5 (only WHERE/HAVING). Hash table, return vs print, session, foreign key all re-learned. Repeat Monday.
+- README: final-project header, build-timeline line, Files section (12 files), Design choices (7). AI citation header in all six scripts (spec requirement).
+- Video: 10-shot cue sheet, two takes, 2:40, unlisted on YouTube: https://youtu.be/Ur0qJ3qL118
+- Submitted: form, submit50 project (check50 2/2), Birthdays (was never submitted — gradebook showed it). 11/11, certificate issued: https://cs50.harvard.edu/certificates/13c3b61c-12b6-45a6-a53a-6360e9669190
+- Original plan had the final project for 21–23 Dec and the certificate by 31 Dec; revised target 4 Dec; done 27 Nov. Weeks 7–9 were "skip unless time is spare" — did them all.
+- Lesson: the terminal prompt tells you which machine you're on (Mac vs codespace). Git is disabled in the codespace — zip download instead.
+- Lesson: the spec is a checklist; read it line by line before calling anything done (Birthdays, AI citation, date on the slide).
+- Next: five questions again Monday cold; December run prep with Papa (1 Dec); AWS AIF-C01 start; LinkedIn post #1 Fri 4 Dec (certificate + December run).
